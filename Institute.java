@@ -1,22 +1,22 @@
 package com.xworkz.cloneapp;
 
-public class Hospital  implements Cloneable{
+public class Institute implements Cloneable {
 private String name;
-private String address;
+private String id;
 private String gstNo;
-private String owner;
 private boolean isOpen;
+private String address;
 public String getName() {
 	return name;
 }
 public void setName(String name) {
 	this.name = name;
 }
-public String getAddress() {
-	return address;
+public String getId() {
+	return id;
 }
-public void setAddress(String address) {
-	this.address = address;
+public void setId(String id) {
+	this.id = id;
 }
 public String getGstNo() {
 	return gstNo;
@@ -24,26 +24,27 @@ public String getGstNo() {
 public void setGstNo(String gstNo) {
 	this.gstNo = gstNo;
 }
-public String getOwner() {
-	return owner;
-}
-public void setOwner(String owner) {
-	this.owner = owner;
-}
 public boolean isOpen() {
 	return isOpen;
 }
 public void setOpen(boolean isOpen) {
 	this.isOpen = isOpen;
 }
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
 @Override
 public String toString() {
-	return "Hospital [name=" + name + ", address=" + address + ", gstNo=" + gstNo + ", owner=" + owner + ", isOpen="
-			+ isOpen + "]";
+	return "instituteapp [name=" + name + ", id=" + id + ", gstNo=" + gstNo + ", isOpen=" + isOpen + ", address="
+			+ address + "]";
 }
 @Override
 	protected Object clone() throws CloneNotSupportedException {
 		// TODO Auto-generated method stub
 		return super.clone();
 	}
+
 }
